@@ -5,6 +5,7 @@ function btnHandler() {
 }
 
 
-const [btn] = document.getElementsByTagName('button')
+// const [btn] = document.getElementsByTagName('button')
+const btn = document.querySelector('.btn+.btn')
 
 btn.addEventListener('click', btnHandler)
