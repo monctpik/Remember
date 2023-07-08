@@ -1,15 +1,58 @@
 'use strict'
 
 
-const cardsContainer = document.getElementById('cards-container')
+const messages = []
+// console.log(messages)
 
-const HTMLCollectionActors = actors.map((actor) => createActorsCard(actor))
+const form = document.getElementById('formId')
 
-function createActorsCard(actor){
-    const HTMLCard = doc
-    return HTMLCard
-}
+form.addEventListener('submit', (e) => {
+    e.preventDefault()
+    const testValue = e.target.test.value.trim()
+    if (!messages.includes(testValue)) {
+        messages.push(testValue)
+    }
+    e.target.reset()
+    console.log(messages)
 
+})
+
+const textMessages = document.getElementById('messages')
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// const cardsContainer = document.getElementById('cards-container')
+
+// const HTMLCollectionActors = actors.map((actor) => createActorsCard(actor))
+
+// function createActorsCard(actor) {
+//     const HTMLCard = document.createElement('li')
+//     HTMLCard.classList.add('card-wrapper')
+
+//     const cardContainer = document.createElement('article')
+//     cardContainer.classList.add('card-container')
+//     HTMLCard.append(cardContainer)
+
+
+//     return HTMLCard
+// }
+
+// cardsContainer--.append(...HTMLCollectionActors)
 
 
 
