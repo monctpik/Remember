@@ -1,23 +1,41 @@
 'use strict'
 
+const buttons = document.getElementsByClassName('flex-button')
 
-const messages = []
-// console.log(messages)
 
-const form = document.getElementById('formId')
 
-form.addEventListener('submit', (e) => {
-    e.preventDefault()
-    const testValue = e.target.test.value.trim()
-    if (!messages.includes(testValue)) {
-        messages.push(testValue)
-    }
-    e.target.reset()
-    console.log(messages)
+const buttonFlexHandler = ({ target }) => {
+    document.getElementById('flex-container').style.flexDirection = target.dataset.flexDirection
+}
 
-})
 
-const textMessages = document.getElementById('messages')
+for (const btn of buttons) {
+    btn.addEventListener('mouseover', buttonFlexHandler)
+}
+
+
+
+
+
+
+
+// const messages = []
+// // console.log(messages)
+
+// const form = document.getElementById('formId')
+
+// form.addEventListener('submit', (e) => {
+//     e.preventDefault()
+//     const testValue = e.target.test.value.trim()
+//     if (!messages.includes(testValue)) {
+//         messages.push(testValue)
+//     }
+//     e.target.reset()
+//     console.log(messages)
+
+// })
+
+// const textMessages = document.getElementById('messages')
 
 
 
