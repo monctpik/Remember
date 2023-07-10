@@ -1,17 +1,41 @@
 'use strict'
 
-const buttons = document.getElementsByClassName('flex-button')
+
+// function startCount(){
+//     let count = 0
+//     const counter = setInterval(()=>{
+//         console.log(count++)
+//         if(count > 10){
+//             clearInterval(counter)
+//         }
+//     }, 300)
+// }
+
+// startCount()
 
 
 
-const buttonFlexHandler = ({ target }) => {
-    document.getElementById('flex-container').style.flexDirection = target.dataset.flexDirection
-}
 
 
-for (const btn of buttons) {
-    btn.addEventListener('mouseover', buttonFlexHandler)
-}
+
+
+
+
+
+
+
+// const buttons = document.getElementsByClassName('flex-button')
+
+
+
+// const buttonFlexHandler = ({ target }) => {
+//     document.getElementById('flex-container').style.flexDirection = target.dataset.flexDirection
+// }
+
+
+// for (const btn of buttons) {
+//     btn.addEventListener('mouseover', buttonFlexHandler)
+// }
 
 
 
