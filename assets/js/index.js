@@ -1,5 +1,71 @@
 'use strict'
 
+// const user = {
+//     name: 'Elon',
+//     age: 51,
+//     getName() { return this.name },
+//     isWife: true,
+//     children: ['ch1', 'ch2'],
+//     adress: {
+//         country: 'USA',
+//         town: 'NY',
+//     },
+//     ukrPasport: null,
+//     petty: undefined,
+//     [Symbol('prop symbol')]: 'prop symbol'
+// };
+
+
+// const serializeUser = JSON.stringify(user)
+// console.log(serializeUser)
+
+// const deserializationUser = JSON.parse(serializeUser)
+// console.log(deserializationUser)
+
+
+const userTelegram = {
+    fname: 'Vladislav',
+    sname: 'Moruga',
+    age: 26,
+    getFullName() {return `${this.fname} + ${this.sname}` },
+    isChildren: null,
+    isWife: undefined,
+    money: ['300', '400', '15000']
+}
+
+console.log(userTelegram.getFullName)
+const ser = JSON.stringify(userTelegram)
+console.log(ser)
+
+const deser = JSON.parse(ser)
+console.log(deser)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 // function startCount(){
 //     let count = 0

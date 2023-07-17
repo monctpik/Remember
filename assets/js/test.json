@@ -1,0 +1,15 @@
+{
+  "fname": "Vladislav",
+  "sname": "Moruga",
+  "age": 26,
+  "isChildren": null,
+  "money": ["300", "400", "15000"]
+}
+{
+    "fname": "Anna",
+    "sname": "Moruga",
+    "age": 27,
+    "isChildren": null,
+    "money": ["3020", "4020", "1200"]
+  }
+  
