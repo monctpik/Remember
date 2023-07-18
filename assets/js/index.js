@@ -63,10 +63,6 @@ console.log(deser)
 
 
 
-
-
-
-
 // function startCount(){
 //     let count = 0
 //     const counter = setInterval(()=>{
