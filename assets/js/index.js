@@ -1,5 +1,33 @@
 'use strict'
 
+fetch('./assets/js/data.json')
+    .then((response) => response.json())
+    .then((data) => {
+        console.log(data.map((user)=>user.name).join(', '))
+    })
+    .catch((error)=>console.log(error))
+    .finally(()=>console.log('Pokemon Sleep'))
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 // const user = {
 //     name: 'Elon',
 //     age: 51,
@@ -23,22 +51,22 @@
 // console.log(deserializationUser)
 
 
-const userTelegram = {
-    fname: 'Vladislav',
-    sname: 'Moruga',
-    age: 26,
-    getFullName() {return `${this.fname} + ${this.sname}` },
-    isChildren: null,
-    isWife: undefined,
-    money: ['300', '400', '15000']
-}
+// const userTelegram = {
+//     fname: 'Vladislav',
+//     sname: 'Moruga',
+//     age: 26,
+//     getFullName() {return `${this.fname} + ${this.sname}` },
+//     isChildren: null,
+//     isWife: undefined,
+//     money: ['300', '400', '15000']
+// }
 
-console.log(userTelegram.getFullName)
-const ser = JSON.stringify(userTelegram)
-console.log(ser)
+// console.log(userTelegram.getFullName)
+// const ser = JSON.stringify(userTelegram)
+// console.log(ser)
 
-const deser = JSON.parse(ser)
-console.log(deser)
+// const deser = JSON.parse(ser)
+// console.log(deser)
 
 
 

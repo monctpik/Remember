@@ -1,4 +1,4 @@
-{
+[{
   "name": "Elon",
   "age": 51,
   "isWife": true,
@@ -7,7 +7,7 @@
     "country": "USA", 
     "town": "NY" },
   "ukrPasport": null
-}
+},
 {
     "name": "Vladislav",
     "age": 22,
@@ -18,4 +18,4 @@
       "town": "Tokmak" },
     "ukrPasport": true
   }
-  
+  ]
