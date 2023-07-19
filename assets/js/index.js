@@ -1,10 +1,20 @@
 'use strict'
 
-fetch('./assets/js/data.json')
-    .then((response) => response.json())
-    .then((data)=> console.log(data))
-    .catch((error)=>{console.log(error)})
-    .finally(()=>console.log('FINALLY'))
+
+function handlePromise(promise){
+    return promise.then((data)=>{
+        console.log('Promise:', data)
+    })
+}
+
+
+const number = 45;
+// const numPromise = Promise.resolve(number)
+// const numPromise = new Promise((resolve, reject)=>{
+//     resolve(number)
+// })
+
+handlePromise(Promise.resolve(number))
 
 
 
@@ -17,11 +27,11 @@ fetch('./assets/js/data.json')
 
 
 
-
-
-
-
-
+// fetch('./assets/js/data.json')
+//     .then((response) => response.json())
+//     .then((data)=> console.log(data))
+//     .catch((error)=>{console.log(error)})
+//     .finally(()=>console.log('FINALLY'))
 
 
 
