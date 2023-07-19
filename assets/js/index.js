@@ -1,20 +1,57 @@
 'use strict'
 
+const lorem = document.getElementById('test')
 
-function handlePromise(promise){
-    return promise.then((data)=>{
-        console.log('Promise:', data)
-    })
-}
+lorem.addEventListener('mouseover', ({ target }) => {
+    if (target === lorem) { return }
+    for (const child of lorem.children) {
+        child.style.fontStyle = ''
+        child.style.fontWeight = ''
+    }
+    target.style.fontStyle = 'italic'
+    target.style.fontWeight = 300
+})
 
 
-const number = 45;
-// const numPromise = Promise.resolve(number)
-// const numPromise = new Promise((resolve, reject)=>{
-//     resolve(number)
-// })
 
-handlePromise(Promise.resolve(number))
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// function handlePromise(promise){
+//     return promise.then((data)=>{
+//         console.log('Promise:', data)
+//     })
+// }
+
+
+// const number = 45;
+// // const numPromise = Promise.resolve(number)
+// // const numPromise = new Promise((resolve, reject)=>{
+// //     resolve(number)
+// // })
+
+// handlePromise(Promise.resolve(number))
 
 
 
