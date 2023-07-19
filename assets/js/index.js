@@ -2,11 +2,54 @@
 
 fetch('./assets/js/data.json')
     .then((response) => response.json())
-    .then((data) => {
-        console.log(data.map((user)=>user.name).join(', '))
-    })
-    .catch((error)=>console.log(error))
-    .finally(()=>console.log('Pokemon Sleep'))
+    .then((data)=> console.log(data))
+    .catch((error)=>{console.log(error)})
+    .finally(()=>console.log('FINALLY'))
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// const myFirstPromise = new Promise(executor)
+
+// function executor (resolve, reject){
+//     Math.random()>0.5 ? resolve() : reject()
+// }
+
+// console.log(myFirstPromise)
+
+
+
+
+
+
+// fetch('./assets/js/data.json')
+//     .then((response) => response.json())
+//     .then((data) => {
+//         console.log(data.map((user)=>user.name).join(', '))
+//     })
+//     .catch((error)=>console.log(error))
+//     .finally(()=>console.log('Pokemon Sleep'))
 
 
 
